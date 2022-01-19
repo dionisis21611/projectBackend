@@ -17,7 +17,7 @@ workbench : διαχείρηση βάσης δεδομένων (https://dev.mysq
 
 1.Πάμε File > New > Project from Version Control και βάζουμε το url-link του github που είναι το repository του back μας.
 2. Έχοντας ανοιχτό το mysql workbench και αφου είμαστε στο local instance μας. Στο intellij δεξιά που λέει Database προσθέτουμε ένα νέο data source > mysql βάζοντας user = root και pass = root και database = petmanager πατάμε Apply και OK . 
-3. Πατάμε play
+
 
 ## Στο mySQL Workbench   
 1. Aφού είμαστε στο local instance μας τρεχουμε την εντολη του αρχείου create bd βάζοντάς την στην κονσόλα και πατόντας execute
