@@ -14,5 +14,6 @@ public interface PetRepo extends JpaRepository<Pet, Long> {
     @Query("SELECT e FROM Pet e WHERE (accept = true) ")
     List<Pet> findAllAcceptedPets();
 
+
     Optional<Pet> findPetById(Long id);
     }

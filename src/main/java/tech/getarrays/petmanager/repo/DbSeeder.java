@@ -80,7 +80,7 @@ public class DbSeeder implements  CommandLineRunner{
 
 
         //Insert a User
-       User user = new User("MyName", "admin", "MyEmail@email.com", "123456789", "1234567890");
+       User user = new User("MyName", "admin", "MyEmail@email.com", "123456789", "1234567890", "Περιστέρι");
 //        User user = new User();
 //        user.setId(String.valueOf(UUID.randomUUID()));
 //        user.setEmail("MyEmail@email.com");
@@ -88,6 +88,7 @@ public class DbSeeder implements  CommandLineRunner{
 //        user.setUsername("admin");
 //        user.setPassword("1234567890");
 //        user.setPhone("1234567890");
+
 //        this.userRepo.save(user);
 //System.out.println(String.valueOf(user.getId()));
       //  user.setId(String.valueOf(UUID.randomUUID()));
@@ -102,7 +103,7 @@ public class DbSeeder implements  CommandLineRunner{
             UserRole userRole = new UserRole(user, role);
             this.userRoleRepo.save(userRole);
         }
-        User user1 = new User("doctor", "doctor", "doctor@email.com", "doctor", "1234567890");
+        User user1 = new User("doctor", "doctor", "doctor@email.com", "doctor", "1234567890", "Περιστέρι");
 //        User user = new User();
 //        user.setId(String.valueOf(UUID.randomUUID()));
 //        user.setEmail("MyEmail@email.com");
@@ -110,6 +111,7 @@ public class DbSeeder implements  CommandLineRunner{
 //        user.setUsername("admin");
 //        user.setPassword("1234567890");
 //        user.setPhone("1234567890");
+//        user.setCity("Περιστέρι");
 //        this.userRepo.save(user);
 //System.out.println(String.valueOf(user.getId()));
         //  user.setId(String.valueOf(UUID.randomUUID()));
@@ -125,7 +127,7 @@ public class DbSeeder implements  CommandLineRunner{
         }
 
 
-        User user2 = new User("employee", "employee", "employee@email.com", "employee", "1234567890");
+        User user2 = new User("employee", "employee", "employee@email.com", "employee", "1234567890", "Περιστέρι");
 //        User user = new User();
 //        user.setId(String.valueOf(UUID.randomUUID()));
 //        user.setEmail("MyEmail@email.com");

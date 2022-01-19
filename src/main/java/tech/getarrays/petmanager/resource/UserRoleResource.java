@@ -38,7 +38,7 @@ public class UserRoleResource {
     public ResponseEntity<?> create(@Valid @RequestBody UserRoleViewModel userRoleViewModel) {
 
 
-        User user = new User(userRoleViewModel.getName(), userRoleViewModel.getUsername(), userRoleViewModel.getEmail(), userRoleViewModel.getPassword(), userRoleViewModel.getPhone());
+        User user = new User(userRoleViewModel.getName(), userRoleViewModel.getUsername(), userRoleViewModel.getEmail(), userRoleViewModel.getPassword(), userRoleViewModel.getPhone(), userRoleViewModel.getCity());
 
         this.userRepo.save(user);
 

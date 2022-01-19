@@ -18,6 +18,7 @@ public class UserPetViewModel {
     private String phone;
 
     private HashMap<String , HashSet<Date[]>> pets;
+    private String city;
 
     public UserPetViewModel(){
 
@@ -77,5 +78,11 @@ public class UserPetViewModel {
 
     public void setPets(HashMap<String, HashSet<Date[]>> pets) {
         this.pets = pets;
+    }
+
+    public String getCity() { return city; }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }

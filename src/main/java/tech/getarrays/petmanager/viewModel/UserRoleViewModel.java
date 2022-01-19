@@ -20,6 +20,7 @@ public class UserRoleViewModel {
     private String phone;
 
     private HashMap<String , HashSet<Date[]>> roles;
+    private String city;
 
     public  UserRoleViewModel(){
 
@@ -79,5 +80,11 @@ public class UserRoleViewModel {
 
     public void setRoles(HashMap<String, HashSet<Date[]>> roles) {
         this.roles = roles;
+    }
+
+    public String getCity() { return city;}
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }

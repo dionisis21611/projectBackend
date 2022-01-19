@@ -50,7 +50,8 @@ public class PetResource {
         if (roles.contains(roleAdmin) || roles.contains(roleDoctor) ){
             pet = petService.findAllPet();
         }else if (roles.contains(roleEmployee)) {
-            pet = petRepo.findAllAcceptedPets();
+//            pet = petRepo.findAllAcceptedPets();
+            pet = userPetRepo.findAllAcceptedAndSameCityPets(userResource.userLogin.getCity());
         } else {
             pet = userPetRepo.findByUserId(userResource.userLogin.getId());
         }

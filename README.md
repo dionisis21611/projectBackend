@@ -7,15 +7,18 @@ nodeJS : για να ενεργοποιήσουμε το angular (https://nodejs
 git : για να πάρετε το repository των εφαρμογών ( https://git-scm.com/downloads)
 
 jdk : java runtime ( https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-## Καθώς τρέχουμε το παρακάτω λινκ τις mysql στο instal της βαζουμε name : root password: root
+## Καθώς τρέχουμε το παρακάτω λινκ τις mysql στο install της βαζουμε name : root password: root
 mysql : βαση δεδομένων ( https://dev.mysql.com/downloads/installer/ )
 
 workbench : διαχείρηση βάσης δεδομένων (https://dev.mysql.com/downloads/workbench/)
- 
 
-## Στο intellij IDEA 
-1. Βάζουμε τον φάκελο projectback 
+
+# Στο πρόγραμμα intelij κάνουμε τα εξής
+
+1.Πάμε File > New > Project from Version Control και βάζουμε το url-link του github που είναι το repository του back μας.
 2. Έχοντας ανοιχτό το mysql workbench και αφου είμαστε στο local instance μας. Στο intellij δεξιά που λέει Database προσθέτουμε ένα νέο data source > mysql βάζοντας user = root και pass = root και database = petmanager πατάμε Apply και OK . 
+3. Πατάμε play
+
 ## Στο mySQL Workbench   
 1. Aφού είμαστε στο local instance μας τρεχουμε την εντολη του αρχείου create bd βάζοντάς την στην κονσόλα και πατόντας execute
 

@@ -59,6 +59,7 @@ public class UserResource {
         viewModel.setUsername(entity.getUsername());
         viewModel.setPassword(entity.getPassword());
         viewModel.setPhone(entity.getPhone());
+        viewModel.setCity(entity.getCity());
 
         return viewModel;
 
@@ -147,7 +148,7 @@ Set<RoleViewModel> roleViewModels = new HashSet<>();
 private User convertToUserEntity(UserViewModel viewModel) {
 
     //   Role role = this.roleRepository.findById(viewModel.getRoleid()).get();
-    User entity = new User(viewModel.getName(),viewModel.getUsername(),viewModel.getEmail(),viewModel.getPassword(), viewModel.getPhone());
+    User entity = new User(viewModel.getName(),viewModel.getUsername(),viewModel.getEmail(),viewModel.getPassword(), viewModel.getPhone(), viewModel.getCity());
 
     return entity;
 }

@@ -16,6 +16,9 @@ public interface UserPetRepo extends JpaRepository<UserPet, String> {
     @Query("SELECT e.id FROM UserPet e WHERE user_id LIKE %?1% AND pet_id LIKE %?2%")
     Long findByUserIdAndPetId(String userId,String petId);
 
+    @Query("SELECT e.pet FROM UserPet e WHERE e.user.city LIKE ?1 AND (e.pet.accept = true)")
+    List<Pet> findAllAcceptedAndSameCityPets(String city);
+
     void deleteUserPetById(Long id);
 //    @Query("DELETE FROM UserPet WHERE (id = ?1) ")
 //    void deleteById(String ID);

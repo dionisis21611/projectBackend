@@ -23,6 +23,8 @@ public class UserViewModel {
     //    @JsonIgnore
     private String phone;
 
+    private String city;
+
 //    private String UserCode;
 
     public String getId() {
@@ -72,6 +74,15 @@ public class UserViewModel {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
 
 
 //    public String getUserCode() {

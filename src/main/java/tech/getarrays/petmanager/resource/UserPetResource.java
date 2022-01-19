@@ -30,7 +30,7 @@ public class UserPetResource {
     @PostMapping("/create")
     public ResponseEntity<?> create(@Valid @RequestBody UserPetViewModel userPetViewModel) {
 
-       User user = new User(userPetViewModel.getName(), userPetViewModel.getUsername(), userPetViewModel.getEmail(), userPetViewModel.getPassword(), userPetViewModel.getPhone());
+       User user = new User(userPetViewModel.getName(), userPetViewModel.getUsername(), userPetViewModel.getEmail(), userPetViewModel.getPassword(), userPetViewModel.getPhone(), userPetViewModel.getCity());
 //
 //        this.userRepo.save(user);
 

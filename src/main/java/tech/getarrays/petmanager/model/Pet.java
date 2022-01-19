@@ -11,7 +11,7 @@ import java.util.Set;
 public class Pet implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false, updatable = false)
+    @Column(nullable = true, updatable = false)
     private Long id;
     private String breed;
     private String gender;
